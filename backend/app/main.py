@@ -15,7 +15,10 @@ app = FastAPI(title="Skill Bridge AI Assistant")
 # In production, replace "*" with your specific frontend domain.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "https://skill-bridge-ten-dusky.vercel.app",
+        "http://localhost:5173"
+    ],  # add your Vercel frontend URL here
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
