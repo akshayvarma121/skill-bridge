@@ -39,7 +39,7 @@ function RegistrationForm() {
     };
 
     try {
-      const response = await api.post('/user', userPayload);
+      const response = await api.post('/api/user', userPayload);
       
       // Save the new user to the shared context
       setUser(response.data.user);

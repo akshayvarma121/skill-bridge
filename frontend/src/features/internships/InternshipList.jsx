@@ -16,7 +16,8 @@ function InternshipList() {
       setError(null);
       
       try {
-        const response = await api.get('/internships');
+        const response = await api.get('/api/internships');
+
 
         // --- CRITICAL FIX ---
         // Always verify that the API response is an array before setting state.

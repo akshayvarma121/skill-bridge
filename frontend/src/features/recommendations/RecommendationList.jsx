@@ -39,7 +39,8 @@ function RecommendationList() {
       }
       try {
         // The backend expects a full UserProfile object, so send the entire 'user' object from context.
-        const response = await api.post('/recommend', user);
+        const response = await api.post('/api/recommend', user);
+
         setRecommendations(response.data);
       } catch (err) {
         console.error("Failed to fetch recommendations:", err.response ? err.response.data : err.message);

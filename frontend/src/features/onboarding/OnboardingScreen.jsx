@@ -51,7 +51,8 @@ function OnboardingScreen() {
   
   const registerUserInDb = async (finalUserData) => {
     try {
-      const response = await api.post('/user', finalUserData);
+      const response = await api.post('/api/user', finalUserData);
+
       console.log('User successfully registered:', response.data);
       setUser(response.data.user);
       setRegistrationComplete(true);
