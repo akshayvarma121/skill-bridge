@@ -41,7 +41,7 @@ pyasn1_modules==0.4.2
 pydantic==2.12.4
 pydantic_core==2.41.5
 PyJWT==2.10.1
-pymongo==4.8.0
+pymongo==4.15.4
 python-dotenv==1.1.1
 python-multipart==0.0.20
 PyYAML==6.0.2
